@@ -5,28 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Programa calculadora & tabla</title>
+    <link rel="stylesheet" href="js5.css">
 </head>
 <body>
-    <section>
-        <h1>Programa calculadora</h1>
-        <p>Primer numero: <input type="text" name="No.2"></p>
-        <p>Segundo numero: <input type="text" name="No.2"></p>
-        <p>Tipo de operacion a realizar: <input type="text" name="Operacion"></p>
-        <!--poner resultado-->
-        <buttom onclick="calcular()">Calcular</buttom>
-
-    </section>
-    <section>
-        <h1>Programa tabla</h1>
-        <p>Tabla: <input type="text" name="tabla"></p>
-        <p>Tipo de orden: <input type="text" name="tipo"></p>
-        <p>Longitud maxima de la tabla: <input type="text" name="longitud"></p>
-
-        <!--Mostrar el resultado-->
-        <buttom onclick="calcular()">Ver tabla</buttom>
-
-
-    </section>
+    <script src="js5.js"></script>
     
+    <h1>Calculadora basica clase 52</h1>
+
+    <hr>
+    <hr>
+
+    <div>
+        <label for="Val1"><strong>Primer valor</strong></label>
+        <input type="text" id="Val1">
+    </div>
+    <br>
+    <div>
+        <label for="Val2"><strong>Segundo valor</strong></label>
+        <input type="text" id="Val2">
+    </div>
+    <br>
+    <div>
+        <label for="OperacionTipo"><strong>Tipo de operacion (+, -, *, /)</strong></label>
+        <input type="text" id="OperacionTipo">
+    </div>
+    <br>
+    <div>
+        <label for="Resultado"><strong>Resultado total:</strong></label>
+        <input type="text" id="Resultado" readonly>
+    </div>
+    <br>
+    <div>
+        <button onclick="Proceder()">CALCULAR</button>
+    </div>
+
+
 </body>
 </html>
